@@ -28,6 +28,15 @@ const Navbar = () => {
               >
                 <Link to="/">سکه</Link>
               </li>
+              <li
+                className={
+                  params === "/cryptoPrice"
+                    ? "hover:text-black leading-15 border-b"
+                    : "hover:text-black leading-15 "
+                }
+              >
+                <Link to="/cryptoPrice">ارز دیجیتال</Link>
+              </li>
             </ul>
           </div>
           <div className=" pl-10 items-center ">
