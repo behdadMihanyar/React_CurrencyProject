@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import Currency from "./Pages/Currency";
-import Weather from "./Pages/Weather";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 const query = new QueryClient();
@@ -16,7 +15,6 @@ const router = createBrowserRouter(
     <Route path="/" element={<MainLayout />}>
       <Route index element={<Gold />} />
       <Route path="/currency" element={<Currency />} />
-      <Route path="/weather" element={<Weather />} />
     </Route>
   )
 );

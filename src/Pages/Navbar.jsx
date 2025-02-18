@@ -8,7 +8,7 @@ const Navbar = () => {
     <>
       <div>
         <nav className="flex h-15 bg-amber-500 text-white justify-between items-center py-10 rounded-b-4xl">
-          <div className="">
+          <div>
             <ul className="flex flex-row float-right pr-10 h-15 font-bold text-center gap-10">
               <li
                 className={
@@ -27,15 +27,6 @@ const Navbar = () => {
                 }
               >
                 <Link to="/">سکه</Link>
-              </li>
-              <li
-                className={
-                  params === "/weather"
-                    ? "hover:text-black leading-15 border-b"
-                    : "hover:text-black leading-15 "
-                }
-              >
-                <Link to="/weather">هواشناسی</Link>
               </li>
             </ul>
           </div>

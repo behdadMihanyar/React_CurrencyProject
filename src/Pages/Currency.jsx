@@ -27,7 +27,7 @@ const Currency = () => {
     setFilterCoin(data.filter((para) => para.name.startsWith(filter)));
   }, [filter]);
   return (
-    <div>
+    <div className="mb-10">
       <div className="w-full flex justify-center mb-2">
         <input
           type="text"
