@@ -44,7 +44,7 @@ const Currency = () => {
               <tr className=" bg-white hover:bg-amber-200" key={para.name}>
                 <th
                   scope="row"
-                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap text-black"
+                  className="px-6 py-4 font-medium whitespace-nowrap text-black"
                 >
                   {para.name}
                 </th>
