@@ -42,7 +42,7 @@ const Coin = () => {
   console.log(filteredCoin);
 
   return (
-    <div className="flex">
+    <div className=" overflow-x-scroll scrollbar-hide">
       <div className="w-full">
         <div className="flex justify-center items-center flex-col mt-5">
           <p className="text-center mt-5 font-bold text-3xl text-blue-700">
