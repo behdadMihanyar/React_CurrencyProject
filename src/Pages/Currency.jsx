@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
 const Currency = () => {
   const [data, setData] = useState([]);
@@ -16,7 +16,7 @@ const Currency = () => {
       };
       getData();
     } catch (error) {
-      console.log("error fetching data");
+      console.log("error fetching data", error.message);
     }
   }, []);
 

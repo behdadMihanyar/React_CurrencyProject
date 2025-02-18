@@ -1,4 +1,3 @@
-import Navbar from "./Pages/Navbar";
 import Gold from "./Pages/Gold";
 import {
   Route,
@@ -7,7 +6,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
-import Currency from "./pages/Currency";
+import Currency from "./Pages/Currency";
 import Weather from "./Pages/Weather";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";

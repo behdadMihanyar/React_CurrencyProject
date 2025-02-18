@@ -1,8 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 
 const Gold = () => {
   const [data, setData] = useState([]);
-  const [filter, setFilter] = useState("");
   const [filterCoin, setFilterCoin] = useState([]);
   useEffect(() => {
     try {
@@ -16,7 +16,7 @@ const Gold = () => {
       };
       getData();
     } catch (error) {
-      console.log("error fetching data");
+      console.log("error fetching data", error.message);
     }
   }, []);
   return (
