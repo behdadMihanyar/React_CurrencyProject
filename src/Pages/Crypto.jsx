@@ -13,7 +13,6 @@ const Crypto = () => {
   const [f, setF] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  console.log(currency === "دلار");
   useEffect(() => {
     const fetChData = async () => {
       const req = await fetch(
@@ -43,6 +42,7 @@ const Crypto = () => {
       );
     }
   }, [search]);
+
   const prevHandler = () => {
     setLoading(true);
     if (page <= 1) return setLoading(false);

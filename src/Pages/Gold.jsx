@@ -8,7 +8,7 @@ const Gold = () => {
     try {
       const getData = async () => {
         const req = await fetch(
-          "https://brsapi.ir/FreeTsetmcBourseApi/Api_Free_Gold_Currency.json"
+          "https://brsapi.ir/Api/Market/Gold_Currency.php?key=FreeOmyTOvQelQcZdcQwNrggWfbKJKTu"
         );
         const res = await req.json();
         setData(res.gold);
