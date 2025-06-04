@@ -1,9 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
-<<<<<<< HEAD
 import { FaLongArrowAltUp } from "react-icons/fa";
-=======
->>>>>>> 7ba0bb728f6f5aab3f351024860235b6306ca466
 
 const Gold = () => {
   const [data, setData] = useState([]);
@@ -32,18 +29,12 @@ const Gold = () => {
             key={para.name}
           >
             <h2 className="text-xl font-semibold text-zinc-800">{para.name}</h2>
-<<<<<<< HEAD
             <p className="text-lg flex flex-row content-center">
               تومان {para.price.toLocaleString()}
               <FaLongArrowAltUp color="green" fontSize="20px" />
             </p>
             <p className="text-sm text-gray-500">
               {para.time} {para.date}
-=======
-            <p className="text-lg">تومان {para.price.toLocaleString()}</p>
-            <p className="text-sm text-gray-500">
-              {para.time} {para.date}{" "}
->>>>>>> 7ba0bb728f6f5aab3f351024860235b6306ca466
             </p>
           </div>
         ))}

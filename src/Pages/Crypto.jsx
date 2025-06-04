@@ -60,7 +60,6 @@ const Crypto = () => {
         <input
           type="text"
           placeholder="جستجو ..."
-<<<<<<< HEAD
           className="mr-3 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
@@ -70,13 +69,6 @@ const Crypto = () => {
           onChange={(e) => setCurrency(e.target.value)}
           value={currency}
         >
-=======
-          className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <select onChange={(e) => setCurrency(e.target.value)} value={currency}>
->>>>>>> 7ba0bb728f6f5aab3f351024860235b6306ca466
           <option>دلار</option>
           <option>یورو</option>
         </select>
@@ -167,19 +159,11 @@ const TableCoin = ({ f, setF, currency, setCurrency }) => {
                   <p>{coin.name}</p>
                 </div>
               </th>
-<<<<<<< HEAD
               <td className="px-6 py-4 text-center">
                 <span className="font-bold">
                   {currency === "دلار" ? "$" : "€"}
                 </span>
                 {coin.current_price.toLocaleString()}
-=======
-              <td className="px-6 py-4">
-                {coin.current_price.toLocaleString()}
-                <span className="font-bold">
-                  {currency === "دلار" ? " دلار" : " یورو"}
-                </span>
->>>>>>> 7ba0bb728f6f5aab3f351024860235b6306ca466
               </td>
               <td className="px-6 py-4">
                 {coin.last_updated.slice(".", -5).split("T").slice(1)}
